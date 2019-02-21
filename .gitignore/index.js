@@ -1,6 +1,11 @@
 const Discord=require('discord.js');
 const bot= new Discord.Client();
 
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 bot.on('ready',function(){
     console.log('Le Bot est en place mon capitaine.');
     bot.user.setGame('Prier le dieu Soxis')
@@ -24,6 +29,22 @@ bot.on('message',function (message) {
                 break;
             case ("juiverie"):
                 message.channel.send('Tu vas finir suicidé mon p\'tit pote à la compote... ');
+                break;
+            case ("yo" || "Yo" || "Salut" || "Bonjour" || "Coucou"):
+                i = getRandomInt(3);
+                var msg = "";
+                switch(i){
+                    case(0):
+                        msg="abricots :peach:";
+                        break;
+                    case(1):
+                        msg="hélicos :helicopter:";
+                        break;
+                    case(2):
+                        msg="asticot :bug:";
+                        break;
+                }
+                message.channel.send('Yo les '+msg);
                 break;
 
         }
