@@ -1,7 +1,6 @@
 const Discord=require('discord.js');
 const bot= new Discord.Client();
 
-
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
@@ -35,6 +34,7 @@ bot.on('message',function (message) {
            message.channel.send('Bonne nuit '+message.author.username+",\n Fait de beaux rêves :relaxed:");
         }
         if(message.content==='yo' || message.content==='Yo' || message.content==='YO'){
+              message.react(":wave:");
               i = getRandomInt(3);
                 var msg = "";
                 switch(i){
