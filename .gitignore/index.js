@@ -35,7 +35,7 @@ bot.on('message',function (message) {
    message.channel.send(emojiList);
 }
         if(message.content==="Bonne nuit"||message.content==="bonne nuit"){
-           message.channel.send('Bonne nuit '+message.author.username+",\n Fait de beaux rêves :relaxed:");
+           message.channel.send('Bonne nuit '+message.author.username+",\nFait de beaux rêves :relaxed:");
         }
         if(message.content==='yo' || message.content==='Yo' || message.content==='YO'){
               message.react("👋");
