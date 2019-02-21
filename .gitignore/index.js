@@ -41,7 +41,7 @@ bot.on('message',function (message) {
         }
         if(message.content==='yo' || message.content==='Yo' || message.content==='YO'){
               message.react("👋");
-              i = getRandomInt(3);
+              i = getRandomInt(4);
                 var msg = "";
                 switch(i){
                     case(0):
@@ -53,6 +53,9 @@ bot.on('message',function (message) {
                     case(2):
                         msg="asticot :bug:";
                         break;
+                    case(3):
+                      msg="haricots :leaves:";
+                      break;
                 }
                 message.channel.send('Yo les '+msg);
         }
