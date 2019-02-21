@@ -34,7 +34,7 @@ bot.on('message',function (message) {
            message.channel.send('Bonne nuit '+message.author.username+",\n Fait de beaux rêves :relaxed:");
         }
         if(message.content==='yo' || message.content==='Yo' || message.content==='YO'){
-              message.react(":wave:");
+              message.react(👋);
               i = getRandomInt(3);
                 var msg = "";
                 switch(i){
