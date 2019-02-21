@@ -34,7 +34,7 @@ bot.on('message',function (message) {
         if(message.content==="Bonne nuit"||message.content==="bonne nuit"){
            message.channel.send('Bonne nuit '+message.author.username+",\n Fait de beaux rêves :relaxed:");
         }
-        if(message.content==='yo' || message.content==='Yo' || message.content==='YO'|| message.content==='Coucou'||message.content==='Salut'||message.content==='cc'||message.content==="Bonjour"||message.content==="bonjour"){
+        if(message.content==='yo' || message.content==='Yo' || message.content==='YO'){
               i = getRandomInt(3);
                 var msg = "";
                 switch(i){
@@ -50,10 +50,67 @@ bot.on('message',function (message) {
                 }
                 message.channel.send('Yo les '+msg);
         }
+        if(message.content==="Coucou"||message.content==='cc'|| message.content==="coucou"){
+          i = getRandomInt(4);
+                var msg = "";
+                switch(i){
+                    case(0):
+                        msg="loulous :blush:";
+                        break;
+                    case(1):
+                        msg="hiboux :owl:";
+                        break;
+                    case(2):
+                        msg="ripous :spy:";
+                        break;
+                    case(3):
+                        msg="minous :cat:";
+                        break;
+                }
+                message.channel.send('Coucou les '+msg);
+        }
+        if(message.content==="Bonjour"||message.content==="bonjour"){
+          i = getRandomInt(4);
+                var msg = "";
+                switch(i){
+                    case(0):
+                        msg="amours :heart:";
+                        break;
+                    case(1):
+                        msg="vautours :eagle:";
+                        break;
+                    case(2):
+                        msg="sourts :hear_no_evil:";
+                        break;
+                    case(3):
+                        msg="fours :fire:";
+                        break;
+                }
+                message.channel.send('Bonjour les '+msg);
+        }
+        if(message.content==="slt"|| message.content==='Salut'||message.content==="salut"){
+          i = getRandomInt(4);
+                var msg = "";
+                switch(i){
+                    case(0):
+                        msg="tous nus :eggplant: :sweat_drops:";
+                        break;
+                    case(1):
+                        msg="tordus :smirk:";
+                        break;
+                    case(2):
+                        msg="poilus :scissors:";
+                        break;
+                    case(3):
+                        msg="moldus :star2:";
+                        break;
+                }
+                message.channel.send('Salut les '+msg);
+        }
         if (message.content === 't ki' || message.content === 'T ki' || message.content === 'tki' || message.content === 'Tki') {
             message.channel.send("J'suis l'boss, toi t'es qui ?")
         }
-    }
+    } 
 );
 
 bot.login(process.env.TOKEN);
