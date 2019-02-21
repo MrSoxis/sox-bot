@@ -30,8 +30,9 @@ bot.on('message',function (message) {
             case ("juiverie"):
                 message.channel.send('Tu vas finir suicidé mon p\'tit pote à la compote... ');
                 break;
-            case ("yo" || "Yo" || "Salut" || "Bonjour" || "Coucou"):
-                i = getRandomInt(3);
+        }
+        if(message.content==='yo' || message.content==='Yo' || message.content==='YO'|| message.content==='Coucou'||message.content==='Salut'||message.content==='cc'){
+              i = getRandomInt(3);
                 var msg = "";
                 switch(i){
                     case(0):
@@ -45,10 +46,7 @@ bot.on('message',function (message) {
                         break;
                 }
                 message.channel.send('Yo les '+msg);
-                break;
-
-        }
-
+                break;}
         if (message.content === 't ki' || message.content === 'T ki' || message.content === 'tki' || message.content === 'Tki') {
             message.channel.send("J'suis l'boss, toi t'es qui ?")
         }
