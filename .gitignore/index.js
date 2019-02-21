@@ -29,9 +29,12 @@ bot.on('message',function (message) {
                 break;
             case ("juiverie"):
                 message.channel.send('Tu vas finir suicidé mon p\'tit pote à la compote... ');
-                break;
+                break;          
         }
-        if(message.content==='yo' || message.content==='Yo' || message.content==='YO'|| message.content==='Coucou'||message.content==='Salut'||message.content==='cc'){
+        if(message.content==="Bonne nuit"||message.content==="bonne nuit"){
+           message.channel.send('Bonne nuit '+message.author.username+",\n Fait de beaux rêves :relaxed:");
+        }
+        if(message.content==='yo' || message.content==='Yo' || message.content==='YO'|| message.content==='Coucou'||message.content==='Salut'||message.content==='cc'||message.content==="Bonjour"||message.content==="bonjour"){
               i = getRandomInt(3);
                 var msg = "";
                 switch(i){
