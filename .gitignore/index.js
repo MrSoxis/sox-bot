@@ -3,7 +3,7 @@ const bot= new Discord.Client();
 
 bot.on('ready',function(){
     console.log('Le Bot est en place mon capitaine.');
-    bot.user.setGame('Chercher les dragonballs')
+    bot.user.setGame('Prier le dieu Soxis')
 });
 bot.on('guildMemberAdd', member=>{
     member.createDM().then(channel=>{
