@@ -30,6 +30,10 @@ bot.on('message',function (message) {
                 message.channel.send('Tu vas finir suicidé mon p\'tit pote à la compote... ');
                 break;          
         }
+        if (message.content === "listemojis") {
+   const emojiList = message.guild.emojis.map((e, x) => (x + ' = ' + e) + ' | ' +e.name).join('\n');
+   message.channel.send(emojiList);
+}
         if(message.content==="Bonne nuit"||message.content==="bonne nuit"){
            message.channel.send('Bonne nuit '+message.author.username+",\n Fait de beaux rêves :relaxed:");
         }
