@@ -46,7 +46,7 @@ bot.on('message',function (message) {
                         break;
                 }
                 message.channel.send('Yo les '+msg);
-                break;}
+        }
         if (message.content === 't ki' || message.content === 'T ki' || message.content === 'tki' || message.content === 'Tki') {
             message.channel.send("J'suis l'boss, toi t'es qui ?")
         }
