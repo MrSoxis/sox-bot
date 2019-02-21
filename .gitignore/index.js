@@ -27,6 +27,7 @@ bot.on('message',function (message) {
                 message.channel.send('C\'est toi le pd ' + myname);
                 break;
             case ("juiverie"):
+                message.react("539530263349428245");
                 message.channel.send('Tu vas finir suicidé mon p\'tit pote à la compote... ');
                 break;          
         }
