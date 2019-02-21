@@ -51,6 +51,7 @@ bot.on('message',function (message) {
                 message.channel.send('Yo les '+msg);
         }
         if(message.content==="Coucou"||message.content==='cc'|| message.content==="coucou"){
+          message.react("👋");
           i = getRandomInt(4);
                 var msg = "";
                 switch(i){
@@ -70,6 +71,7 @@ bot.on('message',function (message) {
                 message.channel.send('Coucou les '+msg);
         }
         if(message.content==="Bonjour"||message.content==="bonjour"){
+          message.react("👋");
           i = getRandomInt(4);
                 var msg = "";
                 switch(i){
@@ -89,6 +91,7 @@ bot.on('message',function (message) {
                 message.channel.send('Bonjour les '+msg);
         }
         if(message.content==="slt"|| message.content==='Salut'||message.content==="salut"){
+          message.react("👋");
           i = getRandomInt(4);
                 var msg = "";
                 switch(i){
@@ -108,7 +111,7 @@ bot.on('message',function (message) {
                 message.channel.send('Salut les '+msg);
         }
         if (message.content === 't ki' || message.content === 'T ki' || message.content === 'tki' || message.content === 'Tki') {
-            message.channel.send("J'suis l'boss, toi t'es qui ?")
+            message.channel.send("J'suis l'boss, toi t'es qui ?");
         }
     } 
 );
