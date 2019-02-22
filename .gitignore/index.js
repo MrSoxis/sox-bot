@@ -23,7 +23,9 @@ bot.on('guildMemberRemove', member=>{
 bot.on('message',function (message) {
 
     if(message.channel.type==='dm'){
+      if(!message.content===''){
       message.channel.send("Evite de me draguer en pv stp... C\'est génant");
+      }
     }
   else{
         switch (message.content) {
