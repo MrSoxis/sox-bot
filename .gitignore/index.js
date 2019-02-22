@@ -1,5 +1,7 @@
 const Discord=require('discord.js');
 const bot= new Discord.Client();
+const axios = require("axios");
+
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
@@ -31,6 +33,10 @@ bot.on('message',function (message) {
                 message.channel.send('Tu vas finir suicidé mon p\'tit pote à la compote... ');
                 break;          
         }
+  if(message.content==="test"){
+    axios.get("http://api.yomomma.info/").then(response => {
+      message.channel.send(response.data.joke);
+  }
         if (message.content === "listemojis") {
    const emojiList = message.guild.emojis.map((e, x) => (x + ' = ' + e) + ' | ' +e.name).join('\n');
    message.channel.send(emojiList);
