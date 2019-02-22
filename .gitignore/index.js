@@ -22,6 +22,10 @@ bot.on('guildMemberRemove', member=>{
 });
 bot.on('message',function (message) {
 
+    if(message.channel.type==='dm'){
+      message.channel.send("Evite de me draguer en pv stp... C\'est génant");
+    }
+  else{
         switch (message.content) {
             case("pd"):
                 myname = message.author.username;
@@ -122,6 +126,7 @@ bot.on('message',function (message) {
         }
         if (message.content === 't ki' || message.content === 'T ki' || message.content === 'tki' || message.content === 'Tki') {
             message.channel.send("J'suis l'boss, toi t'es qui ?");
+        }
         }
     } 
 );
