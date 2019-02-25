@@ -39,9 +39,10 @@ bot.on('message',function (message) {
                 break;          
         }
     if(message.content==="Menace"){
-      message.react("398950896416849950");
+     const menace = bot.emojis.get("398950896416849950");
+      message.react(menace);
       message.author.createDM().then(channel=>{
-        return channel.send("Méfie toi, je te préviens, continue et ça va mal se passé");
+        return channel.send(`Méfie toi, je te préviens, continue et ça va mal se passé ${menace}`);
         
     }
         if (message.content === "listemojis") {
