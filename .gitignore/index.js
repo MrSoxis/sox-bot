@@ -22,7 +22,7 @@ bot.on('guildMemberRemove', member=>{
 });
 bot.on('message',function (message) {
 
-    isReaction=getRandomInt(4)
+    isReaction=getRandomInt(8)
   switch(isReaction){
       case 0:
         var reaction="";
