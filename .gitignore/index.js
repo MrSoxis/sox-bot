@@ -38,6 +38,12 @@ bot.on('message',function (message) {
                 message.channel.send('Tu vas finir suicidé mon p\'tit pote à la compote... ');
                 break;          
         }
+    if(message.content==="Menace"){
+      message.react("398950896416849950");
+      message.author.createDM().then(channel=>{
+        return channel.send("Méfie toi, je te préviens, continue et ça va mal se passé");
+        
+    }
         if (message.content === "listemojis") {
    const emojiList = message.guild.emojis.map((e, x) => (x + ' = ' + e) + ' | ' +e.name).join('\n');
    message.channel.send(emojiList);
