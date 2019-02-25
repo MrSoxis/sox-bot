@@ -22,12 +22,28 @@ bot.on('guildMemberRemove', member=>{
 });
 bot.on('message',function (message) {
 
-    if(message.channel.type==='dm'){
-      if(!message.content===''){
-      message.channel.send("Evite de me draguer en pv stp... C\'est génant");
-      }
+    isReaction=getRandomInt(4)
+  switch(isReaction){
+      case 0:
+        var reaction="";
+        reactionIndex=getRandomInt(4);
+        switch(reactionIndex){
+          case 0:
+            reaction = "549537743538225153";
+            break;
+          case 1:
+            reaction = "539530263349428245";
+            break;
+          case 2:
+            reaction="549539540109492235";
+            break;
+          case 3:
+            reaction="549539823950757889";
+            break;
+        }
+        message.react(reaction)
+        break;
     }
-  else{
         switch (message.content) {
             case("pd"):
                 myname = message.author.username;
@@ -38,10 +54,7 @@ bot.on('message',function (message) {
                 message.channel.send('Tu vas finir suicidé mon p\'tit pote à la compote... ');
                 break;          
         }
-    if(message.content === "fusion"){
-       message.react("549537743538225153");
-    return message.channel.send("FUUUU-SION.. AH !\nNous ne formons qu'un." );
-  }
+    
         if (message.content === "listemojis") {
    const emojiList = message.guild.emojis.map((e, x) => (x + ' = ' + e) + ' | ' +e.name).join('\n');
    message.channel.send(emojiList);
@@ -132,7 +145,7 @@ bot.on('message',function (message) {
         }
         if (message.content === 't ki' || message.content === 'T ki' || message.content === 'tki' || message.content === 'Tki') {
             message.channel.send("J'suis l'boss, toi t'es qui ?");
-        }
+        
         }
     } 
 );
