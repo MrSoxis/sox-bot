@@ -39,7 +39,7 @@ bot.on('message',function (message) {
                 break;          
         }
     if(message.content === "fusion"){
-       message.react("549536033977663519");
+       message.react("549537743538225153");
     return message.channel.send("FUUUU-SION.. AH !\nNous ne formons qu'un." );
   }
         if (message.content === "listemojis") {
