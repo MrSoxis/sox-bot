@@ -38,7 +38,7 @@ bot.on('message',function (message) {
                 message.channel.send('Tu vas finir suicidé mon p\'tit pote à la compote... ');
                 break;          
         }
-    if(message.content === "fusion){
+    if(message.content === "fusion"){
        message.react("549536033977663519");
     return message.channel.send("FUUUU-SION.. AH !\nNous ne formons qu'un." );
   }
