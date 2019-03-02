@@ -26,19 +26,34 @@ bot.on('message',function (message) {
   switch(isReaction){
       case 0:
         var reaction="";
-        reactionIndex=getRandomInt(4);
+        reactionIndex=getRandomInt(9);
         switch(reactionIndex){
           case 0:
             reaction = "549537743538225153";
             break;
           case 1:
-            reaction = "539530263349428245";
+            reaction = "549539616894615559"; 
             break;
           case 2:
             reaction="549539540109492235";
             break;
           case 3:
             reaction="549539823950757889";
+            break;
+          case 4 :
+            reaction="549539674427883521";
+            break;
+          case 5:
+            reaction="551352151629103105";
+            break;
+          case 6 :
+            reaction="551352639653150721";
+            break;
+          case 7:
+            reaction ="551351969243987968";
+            break;
+          case 8:
+            reaction = "551352101435998208";
             break;
         }
         message.react(reaction)
